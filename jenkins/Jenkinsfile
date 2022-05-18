@@ -13,7 +13,6 @@ pipeline {
           echo "STACIA"
           echo "Current workspace is ${env.WORKSPACE}"
           echo "STACIA1"
-          python3 -version
           echo "STACIA2"
           sh '''pip3 install --upgrade --force-reinstall --target $HOME/.local/$SAGEMAKER_PROJECT_NAME_ID . "awscli>1.20.30"'''
           echo "STACIA3"
