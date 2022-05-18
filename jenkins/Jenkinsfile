@@ -29,7 +29,7 @@ pipeline {
             echo "going to run pip install locally"
 
             echo "going to run setup.py"
-            python setup.py build_scripts
+            python3 setup.py build_scripts
             echo "Going to run a full build now"
             export PYTHONPATH="$HOME/.local/$SAGEMAKER_PROJECT_NAME_ID:$PYTHONPATH"
             export PYTHONPATH="${PYTHONPATH}:$HOME/.local/$SAGEMAKER_PROJECT_NAME_ID/lib/python3.7/site-packages/"
