@@ -43,6 +43,8 @@ pipeline {
             pip3 install numpy --upgrade --target $HOME/.local/$SAGEMAKER_PROJECT_NAME_ID
             pip3 install pandas --target $HOME/.local/$SAGEMAKER_PROJECT_NAME_ID
             pip3 install sagemaker --target $HOME/.local/$SAGEMAKER_PROJECT_NAME_ID
+            pip3 install pipelines --target $HOME/.local/$SAGEMAKER_PROJECT_NAME_ID
+            
             
             #export PATH=/usr/local/anaconda3/bin:$PATH 
             #eval "$(conda shell.bash hook)"
