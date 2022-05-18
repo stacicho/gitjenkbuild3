@@ -14,7 +14,9 @@ pipeline {
           withEnv(["HOME=${env.WORKSPACE}"]){
             //sh '''pip3 install --upgrade --force-reinstall --target $HOME/.local/$SAGEMAKER_PROJECT_NAME_ID . "awscli>1.20.30"'''
             // sudo -H pip3 install awscli --upgrade --target $HOME/.local/$SAGEMAKER_PROJECT_NAME_ID --ignore-installed six
+            echo "STACIA1"
             sh '''pip3 install --target $HOME/.local/$SAGEMAKER_PROJECT_NAME_ID awscli --prefer-binary'''
+            echo "STACIA2"
             // python3 setup.py install --exec-prefix='$HOME/.local/$SAGEMAKER_PROJECT_NAME_ID' --prefix='$HOME/.local/$SAGEMAKER_PROJECT_NAME_ID'
             sh '''
             printenv
