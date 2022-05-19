@@ -19,8 +19,8 @@ pipeline {
         }
       }
     }
-    //stage('Update and Run Sagemaker Pipeline') {
-      //steps {
+    stage('Update and Run Sagemaker Pipeline') {
+      steps {
         //withAWS(credentials:"${AWS_CREDENTIAL}",region:"${AWS_REGION}") {
           //sh '''export PATH="$HOME/.local/$SAGEMAKER_PROJECT_NAME_ID/bin:$PATH"
           //export PYTHONPATH="$HOME/.local/$SAGEMAKER_PROJECT_NAME_ID:$PYTHONPATH"
@@ -31,7 +31,7 @@ pipeline {
 
           //echo "Create/Update of the SageMaker Pipeline and execution completed."
         //}
-      //}
-    //}
+      }
+    }
   }
 }
